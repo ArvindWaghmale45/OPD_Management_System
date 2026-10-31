@@ -1,59 +1,98 @@
-# Frontproject
+<div align="center">
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.27.
+# OPD Management System
 
-## Development server
+### A modern frontend foundation for outpatient department services
 
-To start a local development server, run:
+Built with Angular 19 and TypeScript
+
+![Angular](https://img.shields.io/badge/Angular-19-DD0031?logo=angular&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.7-3178C6?logo=typescript&logoColor=white)
+![Status](https://img.shields.io/badge/Project-In%20Development-orange)
+
+</div>
+
+---
+
+## Overview
+
+OPD Management System is a web application project focused on outpatient department experiences. The frontend repository provides the starting point for patient and doctor-facing screens, built with Angular.
+
+## Current project scope
+
+The codebase includes component scaffolding for:
+
+- Home
+- Services
+- Patient login and registration
+- Doctor login
+- Feedback
+
+> **Development status:** This project is actively being developed. The components are initial scaffolding; application routes and complete user workflows have not been configured yet.
+
+## Technology
+
+| Technology | Purpose |
+| --- | --- |
+| [Angular 19](https://angular.dev/) | Frontend framework |
+| [TypeScript](https://www.typescriptlang.org/) | Application language |
+| [RxJS](https://rxjs.dev/) | Reactive programming |
+| [Karma](https://karma-runner.github.io/) and [Jasmine](https://jasmine.github.io/) | Unit testing |
+
+## Getting started
+
+### Requirements
+
+- Node.js and npm versions compatible with Angular 19
+
+### Installation
+
+Clone the repository, navigate to the project directory, and install its dependencies:
 
 ```bash
-ng serve
+git clone https://github.com/ArvindWaghmale45/OPD_Management_System.git
+cd OPD_Management_System
+npm install
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+### Run locally
 
 ```bash
-ng generate component component-name
+npm start
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Open [http://localhost:4200](http://localhost:4200) in your browser. The development server watches for source changes and reloads the application.
+
+## Available scripts
+
+| Command | Description |
+| --- | --- |
+| `npm start` | Start the Angular development server. |
+| `npm run build` | Create a production build in `dist/`. |
+| `npm run watch` | Build in development mode and rebuild when files change. |
+| `npm test` | Run unit tests with Karma. |
+
+## Project structure
+
+```text
+src/
+├── app/
+│   ├── doctorlogin/   Doctor login component
+│   ├── feedback/      Feedback component
+│   ├── home/          Home page component
+│   ├── login/         Patient login component
+│   ├── ourservices/   Services component
+│   └── register/      Patient registration component
+├── index.html         Application entry page
+└── styles.css         Global styles
+```
+
+## Development
+
+Generate a component using the Angular CLI:
 
 ```bash
-ng generate --help
+npx ng generate component component-name
 ```
 
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Explore the [Angular CLI documentation](https://angular.dev/tools/cli) for additional commands and guidance.
