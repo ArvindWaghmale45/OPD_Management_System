@@ -47,7 +47,7 @@ export const routes: Routes = [
             { path: 'prescription', component: PrescriptionComponent },
 
         ]
-    }
+    },
     {
         path: 'admin',
         component: AdminlayoutComponent,
