@@ -1,1 +1,16 @@
-<p>adminlayout works!</p>
+<div class="container-fluid">
+    <div class="sidebar">
+        <ul>
+            <li>Admin Panel</li>
+            <li><a class="nav-link" routerLink="/admin/admindashboard">Admin Dashboard</a></li>
+            <li><a class="nav-link" routerLink="/admin/viewappointments">View Appointments</a></li>
+            <li><a class="nav-link" routerLink="/admin/managemedicine">Manage Medicine</a></li>
+            <li><a class="nav-link" routerLink="/admin/prescribe">Check Prescriptions</a></li>
+            <li><a class="nav-link" (click)="logout()">Logout</a></li>
+
+        </ul>
+    </div>
+    <div class="main">
+        <nav>Welcome Admin</nav>
+        <router-outlet></router-outlet>
+    </div>
